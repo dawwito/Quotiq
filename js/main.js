@@ -10,6 +10,7 @@ $(document).ready(function() {
     ['Art is making something out of nothing and selling it.', 'Frank Zappa'],
     ['If the path be beautiful, let us not ask where it leads.', 'Anatole France'],
     ['Life in abundance comes only through great love.', 'Elbert Hubbard'],
+    ['Excuses are the currency that allow you to not act.', 'Garyvee']
     ['Imagination is more important than knowledge.', 'Albert Einstein']
   ];
 
@@ -22,6 +23,11 @@ $(document).ready(function() {
       $('#generate-btn').click(function() {
         var name, photo;
         var eachData = [];
+        if ($.isEmptyObject(response)) {
+          $authorQuote.html('Sorry, No More Quotes.<br>');
+          $authorName.html('Please Reload to View Again.');
+          $authorPhoto.css('background-image','url(data/brain.jpg)');
+        }
 
         for (name in response) {
           eachData = response[name];
