@@ -14,25 +14,44 @@
   padding-top: 30px;
 }
 #logo {
-  width: 90px;
-  height: 90px;
-  position: absolute;
-  margin-left: -45px;
-  left: 50%;
+  width: 126px;
+  height: 45px;
+  margin: 20px auto 50px auto;
+}
+#logo .logo-content {
+  display: inline-block;
+  height: 45px;
+  float: left;
+  line-height: 45px;
+}
+#logo #img {
+  width: 45px;
+  height: 45px;
+  padding: 7.5px;
+}
+#logo #logo-divider {
+  width: 1px;
+  height: 20px;
+  margin-top: 12.5px;
+  background: #fff;
+}
+#logo #app-name {
+  width: 80px;
+  height: 45px;
+  padding: 0px 7.5px;
+  color: #fff;
+  margin-top: 0px;
+  font-weight: bold;
 }
 #quote-holder {
   width: 60%;
-  height: 150px;
-  padding: 5%;
-  position: absolute;
-  margin-left: -30%;
-  margin-top: -75px;
-  top: 50%;
-  left: 50%;
+  height: 200px;
+  padding: 0px 5%;
+  margin: 90px auto 50px auto;
   box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
   background-color: #fff;
   color: #1abc9c;
-  display: inline-block;
+  display: block;
 }
 #author-name {
   text-transform: capitalize;
@@ -40,13 +59,12 @@
 #author-photo {
   width: 60px;
   height: 60px;
-  position: absolute;
-  left: 50%;
+  margin: auto;
+  position: relative;
   top: -30px;
-  margin-left: -30px;
   background-color: green;
   border-radius: 100%;
-  background-image: url("data/brain.jpg");
+  background-image: url("../data/brain.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,16 +73,17 @@
   width: 50px;
   height: 50px;
   border-radius: 100%;
-  padding-top: 7.5px;
-  position: absolute;
-  bottom: 10%;
-  right: 50%;
-  margin-right: -25px;
+  margin: 25px auto;
   background-color: #fff;
   color: #1abc9c;
   border: none;
   box-shadow: 1px 1px 30px rgba(0,0,0,0.1);
   display: block;
+}
+#generate-btn i {
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
 }
 #generate-btn:hover {
   box-shadow: 1px 1px 30px rgba(0,0,0,0.3);
@@ -81,17 +100,11 @@
 @media only screen and (min-width: 1024px) {
   #quote-holder {
     width: 600px;
-    margin-left: -300px;
-    left: 50%;
-    padding: 3%;
   }
 }
 @media only screen and (max-width: 768px) {
   #quote-holder {
     width: 90%;
-    height: 200px;
-    margin-left: -45%;
-    left: 50%;
-    padding: 10% 5%;
+    height: 225px;
   }
 }
