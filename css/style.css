@@ -52,6 +52,7 @@
   background-color: #fff;
   color: #1abc9c;
   display: table;
+  border-radius: 5px;
 }
 #quote-holder .align {
   display: table-cell;
